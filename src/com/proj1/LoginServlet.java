@@ -99,7 +99,7 @@ public class LoginServlet extends HttpServlet {
 	    	 } 
 	    	 else
 	    		 {
-	    		 System.out.println("Failed to find user");
+	    		 System.out.println("Failed to find the user");
 	    		request.getRequestDispatcher("failed.jsp").forward(request, response);
 	    		rs.close();
 	    	      stmt.close();
