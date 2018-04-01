@@ -14,11 +14,11 @@
 <body>
     
     <header>
-        REQUEST MANAGEMENT PORTAL
+        HR Management Portal
         
         </header>
-    
-		 <div class="options">
+    	
+		 <div class="options" style="max-width:40%">
         <div class="form">
         <div class="formtext">SIGN IN</div>
        <div class="forminput">

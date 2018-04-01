@@ -79,7 +79,7 @@ input,select {
     padding: .8em;
     background: rgba(255,255,255,0.5);
     margin: .8em;
-        min-width:30%; 
+    min-width:50%;   	 
    	max-width:100%;
     text-size:100%;
 }
@@ -118,7 +118,7 @@ background: #4CAF50;
    
 }
 button:hover{
-	 background: #e7e7e7;;
+	 background: #e7e7e7;
     color: #4CAF50;
     letter-spacing: 2px;
 }
