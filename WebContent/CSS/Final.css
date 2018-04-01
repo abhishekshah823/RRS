@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+body
+{
+
+    background: url(../Images/photo_bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	
+    
+}

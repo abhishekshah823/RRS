@@ -5,19 +5,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Request History</title>
+<link rel="stylesheet" href="./CSS/styleindex.css" type="text/css" />
 </head>
 <body>
-<table border="2">
+<div style="overflow-x:auto;">
+<table border="4">
 <tr>
-<td>Request_ID</td>
-<td>Requesting User</td>
-<td>Date</td>
-<td>Description</td>
-<td>Department</td>
-<td>Experience</td>
-<td>Expertise</td>
-<td>State</td>
+<th>Request_ID</th>
+<th>Requesting User</th>
+<th>Date</th>
+<th>Description</th>
+<th>Department</th>
+<th>Experience</th>
+<th>Expertise</th>
+<th>State</th>
 </tr>
 <% 
 
@@ -47,10 +50,12 @@ while(rs.next())
 	  	
 <% } %>
 </table>
+</div>
 <br>
+<div class="options">
  <form action="options.jsp">
- <input type="submit" value="Return to Previous Menu">
-
+ <button type="submit" value="Return to Previous Menu">Return to Previous Menu</button>
+</div>
  </form>
 </body>
 </html>

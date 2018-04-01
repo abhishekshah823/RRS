@@ -5,19 +5,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Approve Requests</title>
+<link rel="stylesheet" href="./CSS/styleindex.css" type="text/css" />
+<style>body{background-colour:white;}</style>
 </head>
 <body>
-<table border="2">
+<div style="overflow-x:auto;">
+<table border="4">
 <tr>
-<td>Request_ID</td>
-<td>Date</td>
-<td>Description</td>
-<td>Department</td>
-<td>Experience</td>
-<td>Expertise</td>
-<td>Requesting User</td>
-<td>State</td>
+<th>Request_ID</th>
+<th>Date</th>
+<th>Description</th>
+<th>Department</th>
+<th>Experience</th>
+<th>Expertise</th>
+<th>Requesting User</th>
+<th>State</th>
 </tr>
 <% 
 int i=0;
@@ -46,12 +50,12 @@ while(rs.next())
 if(app.equals("New Request"))
 { %>
 <td><form action="ApproveRequest">
-<input type="submit" value="Approve Request">
+<button type="submit" value="Approve Request">Approve Request</button>
 <input type="hidden" value="<%= i %>" name="i">
 <input type="hidden" value="1" name ="j">
 </form></td>	
 <td><form action="ApproveRequest">
-<input type="submit" value="Reject Request">
+<button type="submit" value="Reject Request">Reject Request</button>
 <input type="hidden" value="2" name ="j">
 <input type="hidden" value="<%= i %>" name="i">
 </form></td>
@@ -67,7 +71,7 @@ if(app.equals("Cancelled Request"))
 {
 %>
 <td><form action="ApproveRequest">
-<input type="submit" value="Approve Cancellation">
+<button type="submit" value="Approve Cancellation">Approve Cancellation</button>
 <input type="hidden" value="3" name ="j">
 <input type="hidden" value="<%= i %>" name="i">
 </form></td>
@@ -76,8 +80,9 @@ if(app.equals("Cancelled Request"))
 i++;} %>	
 </tr>
 </table><br>
+</div>
 	<form action="options.jsp">
- 		<input type="submit" value="Return to previous menu">
+ 		<div class="options"><button type="submit" value="Return to previous menu">Return to previous menu</button></div>
 </form>
 
  

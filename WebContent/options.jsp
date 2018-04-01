@@ -4,34 +4,40 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Select Option</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+    <link rel="stylesheet" href="./CSS/styleindex.css" type="text/css" />
 </head>
 <body>
+<header>    
 You have successfully Logged in <br>
 Welcome, ${userId}
-<br>
+    
+  </header>  
+<div class="options">
 <%	String usertype=(String)session.getAttribute("usertype");
 if(usertype.equals("hr"))
 {
 %>
-HR View :<br>
-<form action= "ViewAllRequest" method="post">
-<input type="submit" value="View the request database">
-</form><br>
-<%}%>
-<form action= "NewRequest">
-<input type="submit" value="Create a New Request">
-</form><br>
-<form action= "ViewRequest" method="Post">
-<input type="submit" value="View My Requests">
-</form><br>
-<form action= "ApproveRequest" method="Post">
-<input type="submit" value="Manage Subordinate Requests">
-</form>
 <br>
 
-<form action= "Logout.jsp">
-<input type="submit" value="Logout">
+<form  action= "ViewAllRequest" method="post">
+    <button type="submit" value="view the request database">view the request database</button>
+</form><br>
+<%}%>
+
+    <form  action= "NewRequest">
+    <button type="submit" value="Create a New Request">Create a New Request</button>
+    </form><br>
+<form  action= "ViewRequest" method="Post">
+    <button type="submit" value="View My Requests">View My Requests</button>
+</form><br>
+<form  action= "ApproveRequest" method="Post">
+    <button type="submit" value="Manage Subordinate Requests">Manage Subordinate Requests</button>
 </form>
+<br>
+ <form  action= "Logout.jsp">
+ <button type="submit" value="Logout">Logout</button></form>
+ </div>
 </body>
 </html>

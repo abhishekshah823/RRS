@@ -4,12 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Confirmation</title>
+<link rel="stylesheet" href="./CSS/styleindex.css" type="text/css" />
 </head>
 <body>
-Selected Request has been recorded into the database. Thank You!!
+<header>
+Your Request has been recorded into the database. Thank You!!</header>
+<div class="options">
 <form action ="options.jsp">
-<input type="submit" value="Proceed">
+<button type="submit" value="Proceed">Proceed</button></div>
 </form>
 </body>
 </html>
